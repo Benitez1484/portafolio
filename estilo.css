@@ -1,0 +1,1239 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #171717;
+    color: #fff;
+    font-family: 'Krub';
+    padding-top: 80px; /* Espacio para el encabezado fijo */
+}
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #171717;
+    z-index: 100;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #a35ff9;
+}
+header h1{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+header h1 .cuadro{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+header nav ul li {
+    margin: 0 15px; /* Espacio entre los elementos del menú */
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+header nav ul li:hover{
+    border-bottom: 3px solid #fff;
+}
+    header button {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+button {
+    display: none; /* Ajuste según necesidad de diseño responsivo */
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+/* sección inicio */
+.contenido {
+    max-width: 1100px;
+    margin: auto;
+}
+#inicio .contenido .fila{
+    display: flex;
+}
+#inicio .contenido .fila .col{
+    width: 33%;
+    position: relative;
+}
+#inicio .contenido .fila .ui{
+    font-family: 'Krub';
+    font-size: 132px;
+    display: flex;
+    align-items: baseline;
+}
+#inicio .contenido .fila .ui .circulo{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #a35ff9;
+    border-radius: 12px;
+}
+#inicio .contenido .fila .col .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+#inicio .contenido .fila .col .info h2{
+    width: fit-content;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;    
+}
+#inicio .contenido .fila .col .txt{
+    font-family: 'Krub';
+    font-weight: normal;
+    font-size: 43px;
+}
+.vertical{
+    top: 50%;
+    left: -10%;
+    position: absolute;
+    transform: scale(-1) translate(-50%, 50%);
+    writing-mode: vertical-lr;
+    letter-spacing: 5px;
+}
+.circulo-principal{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: #a35ff9;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -2;
+}
+#inicio .contenido .fila .col img{
+    display: block;
+}
+#inicio .contenido .fila .derecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    font-family: 'Krub';
+}
+#inicio .contenido .fila .derecha h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+}
+#inicio .contenido .fila .derecha p{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-right: 15px;
+}
+.btn-primary {
+    background-color: #a35ff9; /* Color de fondo morado */
+    color: #fff; /* Texto en blanco */
+    padding: 12px 24px; /* Espacio interno del botón para hacerlo más visible */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    margin-top: 15px; /* Espacio superior para separarlo del campo anterior */
+}
+
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #7c4dff;
+}
+.btn-secondary:hover {
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #a35ff9;
+    color: #fff; /* Cambio de color del texto cuando el fondo está coloreado */
+}
+
+.derecha a {
+    display: inline-block;
+    margin-top: 15px; /* Espacio para evitar que los botones estén pegados al contenido superior */
+}
+
+/* sección sobre mi */
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #a35ff9;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 15px;
+}
+
+.btn-primary:hover {
+    background-color: #7a3cb9; /* Color más oscuro en hover */
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño del botón */
+}
+
+#sobremi {
+    padding: 50px 10px;
+    height: 90vh;
+}
+
+#sobremi .contenido .fila {
+    display: flex;
+    align-items: center;
+}
+
+#sobremi .contenido .fila .col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.titulo-seccion {
+    font-size: 61px;
+    margin-bottom: 20px;
+}
+
+.resaltado {
+    color: #a35ff9;
+    font-weight: normal;
+}
+
+#sobremi .contenido .fila .col > p {
+    font-size: 14px;
+    width: 350px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#sobremi .contenido .fila .col .skills {
+    margin: 20px 0;
+}
+
+#sobremi .contenido .fila .col .skills p {
+    margin-right: 40px;
+    font-weight: bold;
+    color: #a35ff9; /* Mantener el color original */
+    margin-bottom: 3px;
+}
+
+#sobremi .contenido .fila .col .punto {
+    width: 10px;
+    height: 10px;
+    background-color: #a35ff9;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#sobremi .contenido .fila .col .barra-skill {
+    width: 80%;
+    height: 20px; /* Incremento del grosor de las barras */
+    border: 1px solid #555555;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 30px;
+    position: relative;
+    margin-bottom: 20px;
+    background-color: #e0e0e0; /* Color de fondo para visualizar mejor la barra de progreso */
+}
+
+.progreso {
+    height: 100%;
+    background-color: #a35ff9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 15px; /* Bordes redondeados para mejor apariencia */
+    transition: width 2s ease;
+}
+
+/* Definir el ancho específico para cada barra de progreso */
+#dw {
+    width: 30%;
+}
+
+#dg {
+    width: 50%;
+}
+
+#bd {
+    width: 70%;
+}
+
+#md {
+    width: 30%;
+}
+
+
+/* animaciones */
+.dw{
+    width: 0%;
+    animation: dw 1.5s forwards;
+}
+@keyframes dw{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+/* animación diseño grafico */
+.dg{
+    width: 0%;
+    animation: dg 1.5s forwards;
+}
+@keyframes dg{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+/* animación base de datos */
+.bd{
+    width: 0%;
+    animation: bd 1.5s forwards;
+}
+@keyframes bd{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+/* animación marketing digital */
+.md{
+    width: 0%;
+    animation: md 1.5s forwards;
+}
+@keyframes md{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+#sobremi .contenido .fila .col img{
+    display: block;
+    max-width: 400px;
+    margin: auto;
+}
+/* Contenedor General de los Proyectos */
+/* Contenedor General de los Proyectos */
+#proyectos {
+    padding: 40px 10px;
+}
+
+/* Contenido de la Fila de Proyectos */
+#proyectos .contenido .fila {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se muevan a la siguiente fila si es necesario */
+    gap: 20px; /* Espacio entre las columnas para evitar que estén pegadas */
+    justify-content: center; /* Centramos los elementos en la fila */
+}
+
+/* Cada Tarjeta del Proyecto como Enlace */
+#proyectos .contenido .fila a {
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    color: inherit; /* Inheritar el color del contenido interno */
+    display: block; /* El enlace debe cubrir toda la tarjeta del proyecto */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transiciones suaves */
+}
+
+/* Cada Columna del Proyecto */
+#proyectos .contenido .fila .col {
+    border: 2px solid #fff; /* Borde blanco inicial */
+    padding: 15px; /* Ajuste de padding para un diseño equilibrado */
+    position: relative;
+    text-align: center;
+    width: 250px; /* Mantener el ancho estándar de cada tarjeta del proyecto */
+    height: 280px; /* Altura reducida para hacer las tarjetas más compactas */
+    margin-bottom: 15px;
+    transition: 0.4s; /* Transición suave */
+    box-sizing: border-box; /* Asegurar que el padding se incluya dentro del ancho total */
+    display: flex;
+    flex-direction: column; /* Organizar el contenido en columnas (verticalmente) */
+    align-items: center; /* Centrar el contenido horizontalmente */
+    justify-content: space-between; /* Espaciar la imagen y el título verticalmente */
+    background-color: #1a1a1a; /* Color de fondo para mejorar el contraste */
+}
+
+/* Efecto Hover de Cada Tarjeta del Proyecto */
+#proyectos .contenido .fila a:hover .col {
+    box-shadow: 0px 0px 12px 4px #a35ff9; /* Añadir una sombra morada suave alrededor */
+    border: 2px solid #a35ff9; /* Cambiar el color del borde al morado durante el hover */
+    transform: scale(1.02); /* Aumentar ligeramente el tamaño de la tarjeta */
+}
+
+/* Número del Proyecto */
+#proyectos .contenido .fila .col .numero-proyecto {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: #fff;
+    color: #000;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: .4s;
+}
+
+/* Imagen del Proyecto */
+#proyectos .contenido .fila .col img {
+    width: 100%;
+    max-width: 200px; /* Tamaño máximo para la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+    margin: auto; /* Centramos la imagen dentro de la columna */
+    border-radius: 10px; /* Bordes redondeados para una mejor apariencia */
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin recortarse */
+    background-color: #1a1a1a; /* Añadir color de fondo para mejorar la apariencia */
+}
+
+/* Título del Proyecto en la Parte Inferior */
+#proyectos .contenido .fila .col .titulo-proyecto {
+    letter-spacing: 2px;
+    font-size: 18px; /* Ajustar para hacerlo un poco más pequeño */
+    margin-top: 10px; /* Añadir espacio superior */
+    text-transform: uppercase;
+}
+
+/* Responsividad para la Sección de Proyectos */
+@media screen and (max-width: 920px) {
+    #proyectos .contenido .fila {
+        justify-content: center; /* Mantener los elementos centrados en pantallas más pequeñas */
+    }
+    #proyectos .contenido .fila .col {
+        width: 45%; /* En pantallas medianas, dos proyectos por fila */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #proyectos .contenido .fila .col {
+        width: 90%; /* En pantallas pequeñas, un proyecto por fila */
+    }
+}
+
+
+
+/* sección NUMEROS */
+#numeros{
+    background-color: #1d1d1d;
+    padding: 50px 10px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
+}
+#numeros .fila{
+    display: flex;
+    justify-content: space-evenly;
+}
+#numeros .fila .col{
+    display: flex;
+    align-items: center;
+}
+#numeros .fila .col .mas{
+    font-size: 40px;
+    color: #a35ff9;
+    display: block;
+}
+#numeros .fila .col .num{
+    width: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 15px 0 0px;
+}
+
+/* sección contacto */
+#contacto{
+    padding: 50px 10px;
+    position: relative;
+    height: 100vh   ;
+}
+#contacto .contenido{
+    display: flex;
+    justify-content: end;
+    text-align: center;
+}
+#contacto form {
+    position: relative; /* Para que esté por encima de la imagen */
+    z-index: 1; /* Asegurarse de que el formulario esté frente a la imagen */
+    max-width: 500px;
+    margin: auto;
+    background-color: rgba(23, 23, 22, 0.9); /* Fondo ligeramente oscuro para mejor legibilidad */
+    padding: 18px;
+    border-radius: 10px;
+}
+
+#contacto form p{
+    margin-bottom: 30px;
+} 
+#contacto form input,
+#contacto form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #a35ff9;
+    border-radius: 5px;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+}
+#contacto .img-subs{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 600px;
+}
+#contacto .imagen-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0; /* Asegurarse de que esté detrás del formulario */
+}
+
+#contacto .imagen-container img {
+    max-width: 600px; /* Ajusta el tamaño de la imagen según sea necesario */
+    width: 100%;
+    opacity: 0.8; /* Reduce la opacidad para que el formulario sea legible y la imagen esté al fondo */
+}
+
+#contacto form button {
+    padding: 10px 20px;
+    background-color: #a35ff9;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#contacto form button:hover {
+    background-color: #7c4dff;
+}
+
+#contacto form button.btn-primary {
+    padding: 14x 22px; /* Espacio interno del botón para hacerlo más visible */
+    background-color: #a35ff9; /* Color de fondo morado */
+    color: #fff; /* Texto en blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 10px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10.1px; /* Espacio superior para separarlo del campo anterior */
+    z-index: 2; /* Asegurarse de que esté por encima de otros elementos */
+    display: block; /* Asegurarse de que el botón se muestre */
+    position: relative; /* Asegurar que no se superponga con otros elementos */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+/* footer */
+/* Estilos para el pie de página minimalista */
+footer {
+    background-color: #a35ff9;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar el contenido en el medio */
+}
+
+footer .informacion {
+    max-width: 800px; /* Ancho máximo para mantener la estética */
+    margin: auto;
+}
+
+footer .informacion p {
+    font-size: 16px;
+    margin-bottom: 20px; /* Espacio entre el texto del autor y las redes sociales */
+}
+
+footer .redes a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: #a35ff9;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+footer .informacion .redes {
+    display: flex;
+    gap: 20px; /* Espacio entre iconos */
+    justify-content: center; /* Asegura que los iconos estén centrados */
+}
+
+footer .redes a:hover {
+    background-color: #1d1d1d;
+    color: #fff;
+}
+footer .informacion .redes a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff; /* Fondo blanco para los iconos */
+    color: #a35ff9; /* Color de los iconos */
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%; /* Hacer los iconos redondos */
+    transition: all 0.3s ease;
+}
+
+footer .informacion .redes a:hover {
+    background-color: #1d1d1d; /* Cambia el fondo al pasar el ratón */
+    color: #fff; /* Cambia el color del icono al pasar el ratón */
+}
+
+/* Responsive design */
+@media screen and (max-width:920px){
+    header nav {
+        display: none; /* Ocultar el nav por defecto */
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        background-color: #171717;
+        width: 200px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        z-index: 10;
+    }
+    header nav.responsive{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 55px;
+        background-color:#1d1d1d;
+        border: 1px solid #555555;
+        z-index: 10;
+    }
+    header nav.responsive ul{
+        display: block;
+        
+    }
+    #inicio .contenido .fila{
+        display: block;
+    }
+    
+    #inicio .contenido .fila .col{
+        width: 100%;
+        text-align: center;
+    }
+    #inicio .contenido .fila .col .txt{
+        display: none;
+    }
+    #inicio .contenido .fila .col .ui{
+        justify-content: center;
+        font-size: 80px;
+    }
+    #inicio .contenido .fila .col .info{
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+    #inicio .contenido .fila .col .info h2{
+        width: auto;
+        margin: 30px 0;
+        font-size: 30px;
+    }
+    #inicio .contenido .fila .col img{
+        margin: auto;
+        width: 150px;
+    }
+    #inicio .contenido .fila .derecha{
+        padding-left: 0;
+    }
+    .circulo-principal{
+        width: 200px;
+        height: 200px;
+    }
+
+    /* sección sobremi */
+    #sobremi {
+        padding: 50px 0;
+    }
+    
+    #sobremi .contenido {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    #sobremi .fila {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #sobremi .col {
+        flex: 1 1 calc(50% - 20px); /* Cada columna ocupa la mitad del ancho menos espacio de separación */
+        box-sizing: border-box;
+    }
+    
+    .col-texto {
+        order: 1; /* Asegura que la columna de texto siempre esté a la izquierda */
+    }
+    
+    .col-imagen {
+        order: 2; /* La imagen siempre a la derecha */
+        text-align: center; /* Centra la imagen en la columna */
+    }
+    
+    .imagen-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        max-width: 350px; /* Limita el tamaño máximo de la imagen */
+    }
+    
+    .imagen-sobremi {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    #sobremi{
+        height: auto;
+    }
+    #sobremi .contenido .fila{
+        display: block;
+    }
+    #sobremi .contenido .fila .col{
+        width: 100%;
+    }
+    #sobremi .contenido .fila .col img{
+        display: none;
+    }
+    #sobremi .contenido .fila .col .circulo-principal{
+        display: none;
+    }
+    #sobremi .contenido .fila .col .barra-skill{
+        width: 90%;
+    }
+    
+    #proyectos .contenido .fila{
+        display: block;
+    }
+    #proyectos .contenido .fila .col{
+        width: 90%;
+        margin: 5px auto;
+    }
+    #clientes .contenido .fila .col .circulo-principal{
+        display: none;
+    }
+    #clientes .contenido .fila .col > img{
+        display: none;
+    }
+    #clientes .contenido .fila{
+        display: block;
+    }
+    #clientes .contenido .fila .col{
+       width: 100%;
+       display: block;
+    }
+    
+    #contacto{
+        height: auto;
+    }
+    #contacto form{
+        max-width: 100%;
+    }
+    #contacto img{
+        display: none;
+    }
+
+    footer .contenido{
+        display: block;
+        text-align: center;
+    }
+    footer .contenido h3{
+        width: 100%;
+        border-bottom: none;
+    }
+    footer .contenido .col{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    footer .contenido .col3{
+        width: 100%;
+        text-align: center;
+    }
+    footer .contenido .titulo-footer{
+        text-align: center;
+    }
+    footer .contenido .col ul{
+        margin-top: 5px;
+    }
+    footer .contenido .redes{
+        justify-content: center;
+    }
+}
+
+/*butun descarga */
+.boton-descarga-cv {
+    margin-top: 5px; /* Añade espacio superior para separar el botón del contenido superior */
+    margin-bottom: 40px; /* Añade espacio inferior para separar el botón del siguiente contenido */
+    text-align: left; /* Asegura que el botón se mantenga alineado a la izquierda */
+}
+
+.descargar-cv {
+    padding: 10px 20px; /* Aumenta el padding para hacer el botón más grande y más fácil de clicar */
+    background-color: #a35ff9;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px; /* Bordes redondeados para un estilo moderno */
+    transition: background-color 0.3s ease; /* Efecto suave al pasar el mouse */
+}
+
+.descargar-cv:hover {
+    background-color: #7c4dff; /* Cambia ligeramente el color al pasar el mouse para indicar interacción */
+}
+
+/*formacion academica */
+    /* Estilos específicos para la sección Formación Académica y Experiencia Profesional */
+
+.formacion {
+    padding: 50px 10px;
+}
+
+/* Título de la sección */
+.formacion .titulo-seccion {
+    font-size: 61px;
+    margin-bottom: 20px;
+    color: #a35ff9;
+}
+
+/* Contenedor de cada nivel educativo o experiencia */
+.formacion .nivel-educativo,
+.formacion .experiencia-profesional {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #2a2a2a; /* Fondo oscuro */
+    border-radius: 10px;
+    border-left: 5px solid #a35ff9; /* Barra colorida al lado izquierdo */
+}
+
+/* Título de cada formación o experiencia */
+.formacion .nivel-educativo h4,
+.formacion .experiencia-profesional h4 {
+    font-size: 24px;
+    color: #f2f2f2;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Subtítulo (institución o empresa) */
+.formacion .nivel-educativo h5,
+.formacion .experiencia-profesional h5 {
+    font-size: 20px;
+    color: #4ea5f5;
+    margin-bottom: 5px;
+}
+
+/* Descripción de cada formación o experiencia */
+.formacion .nivel-educativo p,
+.formacion .experiencia-profesional p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+/* Contenedor para las columnas de formación o experiencia */
+.formacion .fila {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Columnas dentro de la sección formación */
+.formacion .col {
+    width: 48%;
+    box-sizing: border-box;
+}
+
+/* Subtítulo general de una subcategoría en la sección (opcional) */
+.formacion .subtitulo-seccion {
+    font-size: 28px;
+    color: #a35ff9;
+    margin-bottom: 20px;
+}
+.nivel-educativo,
+.experiencia-profesional {
+    margin-bottom: 40px; /* Puedes ajustar este valor según sea necesario */
+}
+
+
+#formacion {
+    scroll-margin-top: 200px; /* Añadir un margen superior cuando se haga scroll hasta esta sección */
+    padding-top: 50px; /* Espacio adicional en la parte superior */
+    padding-bottom: 50px; /* Espacio inferior adicional para separación */
+}
+
+#sobremi {
+    padding-bottom: 20px; /* Reducir el espacio en la parte inferior de esta sección */
+}
+
+
+/* Encabezado fijo */
+/* Encabezado fijo ajustado */
+#main-header {
+    position: fixed; /* Hace que el encabezado permanezca fijo en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* El encabezado ocupará todo el ancho de la pantalla */
+    background-color: #171717; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 15px 10px; /* Espaciado interno del encabezado */
+    z-index: 1000; /* Asegura que el encabezado esté siempre por encima del contenido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para diferenciar el encabezado */
+    height: 70px; /* Altura fija del encabezado */
+}
+
+/* Navegación dentro del encabezado */
+#main-header {
+    position: fixed; /* Fijo en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #171717;
+    color: #fff;
+    padding: 15px 10px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+#main-header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+#main-header nav ul li {
+    margin: 0 20px; /* Espacio entre los elementos de navegación */
+}
+
+#main-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+#main-header nav ul li a:hover {
+    color: #a35ff9; /* Cambia el color cuando el cursor está sobre el enlace */
+}
+
+/* Botón de menú (hamburguesa) para pantallas pequeñas */
+#main-header button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    display: none; /* Ocultar por defecto, visible solo en pantallas pequeñas */
+}
+
+/* Ajustar el espaciado del contenido principal para evitar superposición */
+body {
+    margin: 0;
+    padding-top: 80px; /* Asegurar suficiente espacio para que el encabezado fijo no se superponga al contenido */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    #main-header button {
+        display: block; /* Muestra el botón de menú en pantallas pequeñas */
+    }
+
+    #main-header nav {
+        display: none; /* Ocultar navegación por defecto en pantallas pequeñas */
+        position: absolute;
+        top: 100%; /* Justo debajo del encabezado */
+        left: 0;
+        width: 100%;
+        background-color: #1d1d1d; /* Fondo oscuro */
+        border-top: 1px solid #444; /* Línea separadora */
+        padding: 20px 0;
+    }
+
+    #main-header nav.responsive {
+        display: block; /* Muestra la navegación cuando se hace clic en el botón */
+    }
+
+    #main-header nav ul {
+        flex-direction: column; /* Elementos de navegación en columna */
+        align-items: center;
+    }
+
+    #main-header nav ul li {
+        margin: 10px 0; /* Espacio entre elementos de la lista */
+    }
+}
+
+
+#inicio, #sobremi, #formacion {
+    scroll-margin-top: 30px; /* Ajusta según la altura de tu header */
+}
+
+/* Estilos para el Proyecto 1 */
+/* Estilos para el Proyecto 1 */
+
+/* Contenedor General */
+#detalle-proyecto {
+    padding: 50px 10px;
+    
+}
+
+/* Título del Proyecto */
+#detalle-proyecto .titulo-seccion {
+    font-size: 61px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#detalle-proyecto .resaltado {
+    color: #a35ff9;
+    font-weight: normal;
+}   
+
+/* Lenguajes Utilizados */
+#detalle-proyecto .lenguajes-utilizados {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+#detalle-proyecto .lenguaje {
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Colores para los Lenguajes */
+#detalle-proyecto .lenguaje.html {
+    background-color: #ff5733; /* Naranja para HTML */
+}
+#detalle-proyecto .lenguaje.apache {
+    background-color: #777777; /* Naranja para HTML */
+}
+#detalle-proyecto .lenguaje.css {
+    background-color: #2980b9; /* Azul para CSS */
+}
+
+#detalle-proyecto .lenguaje.js {
+    background-color: #f1c40f; /* Amarillo para JavaScript */
+}
+#detalle-proyecto .lenguaje.visual {
+    background-color: #a35ff9; /* visual studio */
+}
+#detalle-proyecto .lenguaje.c {
+    background-color: #1e00ff; /*c++*/
+}
+#detalle-proyecto .lenguaje.java {
+    background-color: #ff5733; /* Amarillo para Java */
+}
+#detalle-proyecto .lenguaje.github a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #fc0000; /* Morado que combina con la paleta */
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#detalle-proyecto .lenguaje.github a:hover {
+    background-color: #e4936e; /* Color más oscuro para el hover */
+}
+
+/* Subtítulo del Proyecto */
+#detalle-proyecto .subtitulo {
+    color: #a35ff9; /* Color similar al del video explicativo */
+    font-weight: bold; /* Para destacar el subtítulo */
+    font-size: 22px; /* Tamaño de fuente ajustado */
+    margin-bottom: 20px;
+    margin-top: 30px; /* Separación del contenido anterior */
+    text-transform: uppercase;
+    border-bottom: 2px solid #a35ff9; /* Añadir una línea inferior para destacar más el subtítulo */
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+/* Descripción del Proyecto */
+#detalle-proyecto .col-texto {
+    margin-bottom: 30px; /* Añadir un margen inferior para separar de las imágenes */
+}
+
+#detalle-proyecto .col-texto p {
+    margin-bottom: 20px; /* Espacio inferior para que no se vea pegado a otros elementos */
+    line-height: 1.6; /* Espaciado para mejorar la legibilidad */
+}
+
+/* Fila Principal */
+#detalle-proyecto .fila {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 20px; /* Añadir espacio entre los bloques principales */
+}
+
+/* Fila de Imágenes del Proyecto */
+#detalle-proyecto .fila.imagenes {
+    display: flex;
+    gap: 40px; /* Aumentar espacio entre las imágenes */
+    margin-top: 30px;
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+    align-items: center; /* Asegurar que las imágenes estén bien alineadas verticalmente */
+}
+
+#detalle-proyecto .col.imagen {
+    text-align: center;
+    max-width: 45%; /* Aumentar el tamaño máximo de la imagen para aprovechar mejor el espacio disponible */
+    flex: 0 1 45%; /* Asegura que las dos imágenes ocupen un 45% del contenedor cada una */
+}
+
+#detalle-proyecto .imagen-proyecto {
+    width: 100%;
+    max-width: 500px; /* Aumentar el tamaño máximo estándar para las imágenes */
+    border-radius: 10px;
+    object-fit: cover; /* Asegura que la imagen se vea bien sin deformarse */
+    transition: transform 0.3s ease; /* Efecto suave al hacer hover */
+}
+
+#detalle-proyecto .imagen-proyecto:hover {
+    transform: scale(1.05);
+}
+
+/* Sección Video Explicativo */
+/* Sección Video Explicativo */
+#detalle-proyecto .video-explicativo {
+    margin-top: 50px; /* Añadir un espacio grande para separar bien esta sección */
+    text-align: center; /* Centrar el contenido de la sección */
+}
+
+#detalle-proyecto .video-explicativo h4 {
+    margin-bottom: 15px;
+    color: #a35ff9;
+    font-weight: bold;
+    font-size: 22px; /* Tamaño ajustado */
+    text-transform: uppercase;
+    border-bottom: 2px solid #a35ff9; /* Añadir una línea inferior para hacer que se destaque */
+    padding-bottom: 5px;
+}
+
+/* Imagen de Vista Previa del Video */
+#detalle-proyecto .vista-previa-video {
+    width: 100%;
+    max-width: 300px; /* Establecer un tamaño máximo fijo para la vista previa del video */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para una apariencia más estética */
+    margin: 0 auto; /* Centrar la imagen dentro de su contenedor */
+    display: block; /* Asegurar que la imagen sea tratada como un bloque para centrarse bien */
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+#detalle-proyecto .vista-previa-video:hover {
+    transform: scale(1.05); /* Efecto hover para hacer que crezca ligeramente */
+}
+
+/* Responsividad para el Proyecto 1 */
+@media screen and (max-width: 920px) {
+    #detalle-proyecto .fila {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #detalle-proyecto .fila.imagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #detalle-proyecto .col.imagen {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #detalle-proyecto .imagen-proyecto {
+        max-width: 100%;
+    }
+
+    #detalle-proyecto .lenguajes-utilizados {
+        justify-content: center;
+    }
+}   
